@@ -1,5 +1,5 @@
 module Day1(day1) where
-import UtilityFunctions(readInt, split, apl)
+import UtilityFunctions(readInt, split)
 import Data.List(sort)
 
 prepareList :: [[String]] -> [Int]

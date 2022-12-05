@@ -23,8 +23,7 @@ day3a li = sum $ map (charToNumber . findCommon . splitInTwo) li
 inAll :: [[Char]] -> [Char]
 inAll [] = ""
 inAll [x] = x
-inAll [x,y] =  x `intersect` y
-inAll (x:y:xs) =   (x `intersect` y) `intersect` inAll xs
+inAll (x:xs) =  x `intersect` inAll xs
 
 day3b :: [[Char]] -> Int
 day3b li = sum $ map (charToNumber . head . inAll) (chunk 3 li)
