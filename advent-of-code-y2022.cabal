@@ -30,6 +30,7 @@ library
       Day3
       Day4
       Day5
+      Day6
       UtilityFunctions
   other-modules:
       Paths_advent_of_code_y2022
